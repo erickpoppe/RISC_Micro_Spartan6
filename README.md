@@ -1,6 +1,6 @@
 # RISC-8
 
-A minimal single-cycle 8-bit RISC CPU in VHDL for the Digilent **Nexys 3** (Spartan-6, Xilinx ISE 14.7). It is the RISC counterpart of μCPU-8, the microcoded accumulator CPU in this repository: same board, same LEDs, same ~3 Hz stepping, but a completely different philosophy.
+A minimal single-cycle 8-bit RISC CPU in VHDL for the Digilent **Nexys 3** (Spartan-6, Xilinx ISE 14.7).
 
 ## What makes it RISC
 
@@ -150,3 +150,7 @@ Press **BTNS** to reset. The LEDs go dark, then show 10, 30, 60 and 100, about 2
 - Map the 8 slide switches to a load address (for example `0xFE`) for input.
 - Add `JAL`/`JR` for subroutine calls.
 - Split into a 5-stage pipeline (IF, ID, EX, MEM, WB) with forwarding and hazard detection.
+
+## Author
+
+MSc. Eng. Erick Poppe
