@@ -1,0 +1,16 @@
+## Nexys 3 (XC6SLX16-3CSG324) constraints for risc8_cpu
+
+NET "clk" LOC = "V10" | IOSTANDARD = "LVCMOS33";
+NET "clk" TNM_NET = "sys_clk_pin";
+TIMESPEC "TS_sys_clk_pin" = PERIOD "sys_clk_pin" 100 MHz HIGH 50%;
+
+NET "rst" LOC = "B8" | IOSTANDARD = "LVCMOS33";   # BTNS
+
+NET "out_bus<0>" LOC = "U16" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<1>" LOC = "V16" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<2>" LOC = "U15" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<3>" LOC = "V15" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<4>" LOC = "M11" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<5>" LOC = "N11" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<6>" LOC = "R11" | IOSTANDARD = "LVCMOS33";
+NET "out_bus<7>" LOC = "T11" | IOSTANDARD = "LVCMOS33";
